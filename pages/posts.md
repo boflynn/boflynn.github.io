@@ -1,10 +1,12 @@
 ---
-layout: default
+title: Posts
+permalink: /posts/
 ---
+
 <div class="home">
   <h1 class="page-heading">Posts</h1>
   <ul class="post-list">
-    {% for post in site.posts limit :3 %}
+    {% for post in site.posts %}
       {% if post.status == 'released' %}
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
