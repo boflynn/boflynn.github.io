@@ -1,0 +1,11 @@
+branches:
+  only:
+  - gh-pages
+script: bundle exec jekyll build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: gh-pages
+  target-branch: master

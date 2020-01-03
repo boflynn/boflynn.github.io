@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>This Site</title>
+    <description>This is my site.</description>
+    <link>//</link>
+    <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 03 Jan 2020 00:41:32 +0000</pubDate>
+    <lastBuildDate>Fri, 03 Jan 2020 00:41:32 +0000</lastBuildDate>
+    <generator>Jekyll v3.6.3</generator>
+    
+      
+        <item>
+          <title>.NET Core Async Main</title>
+          <description>&lt;p&gt;Since the release of C# 7.1, it has been possibly to natively use the &lt;code class=&quot;highlighter-rouge&quot;&gt;await&lt;/code&gt; operator in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Main&lt;/code&gt; method of a console application, but it requires a small project configuration change.&lt;/p&gt;
+
+&lt;p&gt;Here’s the default &lt;code class=&quot;highlighter-rouge&quot;&gt;csproj&lt;/code&gt; created by the &lt;code class=&quot;highlighter-rouge&quot;&gt;dotnet new console&lt;/code&gt; command:&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Project&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Sdk=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Microsoft.NET.Sdk&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;PropertyGroup&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;OutputType&amp;gt;&lt;/span&gt;Exe&lt;span class=&quot;nt&quot;&gt;&amp;lt;/OutputType&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;TargetFramework&amp;gt;&lt;/span&gt;netcoreapp2.1&lt;span class=&quot;nt&quot;&gt;&amp;lt;/TargetFramework&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/PropertyGroup&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Project&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you want to use &lt;code class=&quot;highlighter-rouge&quot;&gt;async&lt;/code&gt; methods in &lt;code class=&quot;highlighter-rouge&quot;&gt;Main&lt;/code&gt;, add the following inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;PropertyGroup&amp;gt;&lt;/code&gt; node:&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;LangVersion&amp;gt;&lt;/span&gt;latest&lt;span class=&quot;nt&quot;&gt;&amp;lt;/LangVersion&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, you can change the signature of &lt;code class=&quot;highlighter-rouge&quot;&gt;Main&lt;/code&gt; to the following:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Task&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// async calls here&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+          <pubDate>Sat, 29 Sep 2018 05:00:00 +0000</pubDate>
+          <link>//blog/2018/09/29/async-main.html</link>
+          <guid isPermaLink="true">//blog/2018/09/29/async-main.html</guid>
+          
+          
+            <category>blog</category>
+          
+        </item>
+      
+    
+      
+    
+      
+        <item>
+          <title>First post</title>
+          <description>&lt;p&gt;Hi there.&lt;/p&gt;
+</description>
+          <pubDate>Wed, 11 Jan 2017 00:00:00 +0000</pubDate>
+          <link>//blog/2017/01/10/first-post.html</link>
+          <guid isPermaLink="true">//blog/2017/01/10/first-post.html</guid>
+          
+          
+            <category>blog</category>
+          
+        </item>
+      
+    
+      
+    
+      
+        <item>
+          <title>New Year Post</title>
+          <description>&lt;p&gt;This is the new year post.&lt;/p&gt;
+</description>
+          <pubDate>Sun, 01 Jan 2017 05:00:00 +0000</pubDate>
+          <link>//blog/2017/01/01/new-year.html</link>
+          <guid isPermaLink="true">//blog/2017/01/01/new-year.html</guid>
+          
+          
+            <category>blog</category>
+          
+        </item>
+      
+    
+  </channel>
+</rss>

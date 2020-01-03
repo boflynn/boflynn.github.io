@@ -1,0 +1,42 @@
+title: This Site
+email: boflynn@gmail.com
+description: This is my site.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "/" # the base hostname & protocol for your site
+twitter_username: boflynn
+github_username:  boflynn
+# Build settings
+markdown: kramdown
+markdown_ext: "markdown,md"
+exclude: ["README.md"]
+
+collections:
+  reference:
+    output: true
+    permalink: /reference/:path/
+  notes:
+    output: true
+    permalink: /notes/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: reference
+    values:
+      layout: reference
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      categories: blog
+  - scope:
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+
