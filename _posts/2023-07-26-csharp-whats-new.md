@@ -2,8 +2,8 @@
 title:      "What's New - C# - Introduction"
 date:       2023-07-26 0:00:00 -0500
 status:     "released"
-categories: csharp, programming, whatsnew
-tags: csharp, programming, whatsnew
+categories: csharp programming whatsnew
+tags:       csharp programming whatsnew
 ---
 
 One of my favorite questions to ask during an interview is what new features of
