@@ -23,7 +23,8 @@ collections:
   tags:
     output: true
     permalink: /tags/:path/
-
+  daily:
+    output: false
 
 defaults:
   - scope:
