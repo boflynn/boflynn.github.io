@@ -11,7 +11,7 @@ permalink: /daily/
   <ul class="daily-list">
     {% for daily_thing in site.daily %}
     <li>
-        <a class="post-link" href="{{ daily_thing.link }}">{{ daily_thing.name }}</a> - {{ daily_thing.description }}
+        <a class="daily-link" href="{{ daily_thing.link }}">{{ daily_thing.name }}</a> - {{ daily_thing.description }}
     </li>
     {% endfor %}
   </ul>
