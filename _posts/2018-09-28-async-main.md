@@ -2,6 +2,7 @@
 title:  ".NET Core Async Main"
 date:   2018-09-29 0:00:00 -0500
 status: "released"
+tags:   [csharp, programming]
 ---
 
 Since the release of C# 7.1, it has been possibly to natively use the `await` operator in the `Main` method of a console application, but it requires a small project configuration change.

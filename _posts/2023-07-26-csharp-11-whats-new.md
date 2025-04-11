@@ -2,6 +2,7 @@
 title:      "What's New - C# - 11.0"
 date:       2023-07-26 0:00:00 -0500
 status:     "inprogress"
+tags:       [csharp, programming, whatsnew]
 ---
 
 ## New Features
