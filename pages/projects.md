@@ -46,3 +46,11 @@ Ditto the above, another Zenva course. There's a lot more easy wins to get here.
 
 A very simple one-page application to show countdowns to events, made via Google
 Gemini. I'm quite happy with what it made; even the name is pleasant.
+
+## Country Code Guesser
+
+ * [Site](https://boflynn.net/country-code-guesser)
+ * [GitHub](https://github.com/boflynn/country-code-guesser)
+
+A very simple one-page application to make a game for my son to learn country
+codes. All Claude made; very happy with the results.
